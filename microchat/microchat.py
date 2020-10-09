@@ -80,7 +80,7 @@ radio.on_received_value(on_received_value)
 microchat_ID = 0
 booting = 0
 booting = 1
-version_number = "6"
+version_number = "7"
 radio.send_string("mc-emu")
 basic.show_leds("""
     # . . . #
@@ -94,6 +94,6 @@ basic.show_string(" micro:chat v" + version_number)
 for index in range(randint(2, 4)):
     loader()
 basic.show_icon(IconNames.FABULOUS)
-booting = 0
 basic.show_string(" Your ID: " + convert_to_text(microchat_ID))
+booting = 0
 radio.send_value("mc-s", microchat_ID)

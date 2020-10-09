@@ -78,7 +78,7 @@ radio.onReceivedValue(function (name, value) {
 let microchat_ID = 0
 let booting = 0
 booting = 1
-let version_number = "6"
+let version_number = "7"
 radio.sendString("mc-emu")
 basic.showLeds(`
     # . . . #
@@ -93,6 +93,6 @@ for (let index = 0; index < randint(2, 4); index++) {
     loader()
 }
 basic.showIcon(IconNames.Fabulous)
-booting = 0
 basic.showString(" Your ID: " + convertToText(microchat_ID))
+booting = 0
 radio.sendValue("mc-s", microchat_ID)
