@@ -4,11 +4,19 @@ A silly chat service, with your favorites like artificial loading times, inspire
 
 You can send messages to micro:bits nearby also running micro:chat.
 
+## micro:chat guidelines
+
+Try to be friendly, though! If multiple messages are sent in a row, all the messages enter "the queue", where each message is displayed one by one.
+
+Because of this, don't spam your micro:chat friends by repeatedly pressing A or B!
+
 ## Get it!
+
 [Download the .hex file](https://raw.githubusercontent.com/VukkyLtd/microbit/main/microchat/microchat.hex) or view the source code - [JavaScript](https://github.com/VukkyLtd/microbit/blob/main/microchat/microchat.js) or [Python](https://github.com/VukkyLtd/microbit/blob/main/microchat/microchat.py).
 
 ## Features
-Random ID from 1-99 to identify micro:bits - shake your micro:bit to see its ID if you didn't see it during startup
+
+Random ID from 1-99 to identify micro:bits - you can shake your micro:bit to see your ID when in chat mode
 
 Three different messages to send: [A smiley face](https://i.imgur.com/I7LHR3Z.png), [a sad face](https://i.imgur.com/koOVqH3.png), and [a duck](https://i.imgur.com/Cs7uJZy.png)
 
