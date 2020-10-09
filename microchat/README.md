@@ -8,7 +8,7 @@ You can send messages to micro:bits nearby also running micro:chat.
 [Download the .hex file](https://raw.githubusercontent.com/VukkyLtd/microbit/main/microchat/microchat.hex) or [view the source code](https://github.com/VukkyLtd/microbit/blob/main/microchat/microchat.js) (JavaScript).
 
 ## Features
-Random ID from 1-99 to identify micro:bits
+Random ID from 1-99 to identify micro:bits - shake your micro:bit to see its ID if you didn't see it during startup
 
 Three different messages to send: [A smiley face](https://i.imgur.com/I7LHR3Z.png), [a sad face](https://i.imgur.com/koOVqH3.png), and [a duck](https://i.imgur.com/Cs7uJZy.png)
 
