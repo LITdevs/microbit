@@ -50,7 +50,7 @@ sprite: game.LedSprite = None
 microchat_ID = 0
 booting = 0
 booting = 1
-version_number = "8"
+version_number = "9"
 radio.send_string("mc-emu")
 music.start_melody(music.built_in_melody(Melodies.POWER_UP), MelodyOptions.ONCE)
 basic.show_leds("""
@@ -60,12 +60,20 @@ basic.show_leds("""
     . # . # .
     . . # . .
     """)
+basic.pause(1700)
 microchat_ID = randint(1, 99)
+music.start_melody(music.built_in_melody(Melodies.PRELUDE),
+    MelodyOptions.FOREVER_IN_BACKGROUND)
 basic.show_string(" micro:chat v" + version_number)
+music.stop_melody(MelodyStopOptions.BACKGROUND)
 sprite = game.create_sprite(1, 5)
+music.start_melody(music.built_in_melody(Melodies.BLUES),
+    MelodyOptions.FOREVER_IN_BACKGROUND)
 for index3 in range(randint(2, 4)):
     loader()
 sprite.delete()
+music.stop_melody(MelodyStopOptions.BACKGROUND)
+music.play_tone(622, music.beat(BeatFraction.EIGHTH))
 basic.show_icon(IconNames.YES)
 basic.show_string(" Your ID: " + convert_to_text(microchat_ID))
 booting = 0
